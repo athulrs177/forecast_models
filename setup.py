@@ -13,6 +13,6 @@ setup(
         'pandas',
         'scikit-learn',
         'xgboost',
-        'tensorflow[and-cuda]',
+        'tensorflow-cpu',
     ],
 )
