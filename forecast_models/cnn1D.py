@@ -12,8 +12,6 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Conv1D, MaxPooling1D, Flatten, Dense, Dropout, Reshape
 from tensorflow.keras.callbacks import EarlyStopping
 from CNN_metric_functions import *
-# from joblib import Parallel, delayed
-
 
 class ForecastModel:
     def __init__(self, params):
@@ -212,11 +210,6 @@ class ForecastModel:
                    'top_features':feature_importance_list['top_features'],
                    'n_features_selected': feature_importance_list['n_features_selected'],
                    'waves_train': feature_importance_list['waves_train'],
-                   
-                   # 'train_loss': history.history['loss'],
-                   # 'validation_loss': history.history['val_loss'],
-                   # 'train_taylor_score': history.history[self.taylor_score_metric],
-                   # 'validation_taylor_score': history.history['val_' + self.taylor_score_metric]
                   }
         del model, early_stopping
         
