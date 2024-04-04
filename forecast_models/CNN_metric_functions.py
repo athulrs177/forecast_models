@@ -5,10 +5,6 @@ from tensorflow.keras.layers import Conv1D, MaxPooling1D, Flatten, Dense, Dropou
 from tensorflow.keras.callbacks import EarlyStopping
 import numpy as np
 
-from sklearn.metrics import mean_gamma_deviance
-
-import isodisreg 
-from isodisreg import idr
 
 def KGE(y_true, y_pred):
     
@@ -56,13 +52,3 @@ def correlation_metric(y_true, y_pred):
     return score
 
 
-def crps_func(obs_train, preds_train, obs_val, preds_val):
-    fitted_idr = idr(obs_train, pd.DataFrame(preds_train))
-    idr_preds_val = fitted_idr.predict(pd.DataFrame(preds_val))
-    idr_preds_crps = np.asarray(idr_preds_val.crps(obs_val))  
-    crps = np.nanmean(idr_preds_crps.flatten())
-    return crps
-
-def crps_metric(obs_train, preds_train, obs_val, preds_val):
-    crps_value = tf.py_function(crps_func, [obs_train, preds_train, obs_val, preds_val], tf.float32)
-    return crps_value
