@@ -1,4 +1,3 @@
-# !pip install git+https://github.com/evwalz/isodisreg.git
 import isodisreg 
 from isodisreg import idr
 

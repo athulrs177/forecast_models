@@ -14,5 +14,7 @@ setup(
         'scikit-learn',
         'xgboost',
         'tensorflow-cpu',
+        'git+https://github.com/evwalz/isodisreg.git',
+        'scipy',
     ],
 )
