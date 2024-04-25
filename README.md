@@ -1,5 +1,5 @@
 # INSTALLATION
-Python package to generate deterministic forecasts of rainfall amounts using Gamma Regression and CNN models. This code accompanies the article ``` TITLE``` published in ``` JOURNAL``` ```DOI ```.
+Python package to generate deterministic forecasts of rainfall amounts using Gamma Regression and CNN models. This code accompanies the article titled ``` TITLE``` published in ``` JOURNAL``` ```DOI ```.
 
 Install using pip: ```pip install git+https://github.com/athulrs177/forecast_models.git```
 
