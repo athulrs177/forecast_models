@@ -1,6 +1,6 @@
 # INSTALLATION
 Python package to generate deterministic forecasts of rainfall amounts using Gamma Regression and CNN models. This code accompanies the article titled ``` Machine learning models for daily rainfall forecasting in Northern Tropical
-Africa using tropical wave predictors``` submitted to ``` Weather and Forecasting```. A preprint is available in arxiv under: ```http://arxiv.org/abs/2408.16349 ```.
+Africa using tropical wave predictors``` submitted to ``` Weather and Forecasting```. A preprint is available in arxiv under: ```http://arxiv.org/abs/2408.16349```.
 
 Install using pip: ```pip install git+https://github.com/athulrs177/forecast_models.git```.
 If this causes issues, then you may try downloading the directory ```forecast_models```.
